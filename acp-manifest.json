@@ -1,0 +1,25 @@
+{
+  "name": "shopfleet-shared",
+  "description": "Shared types, schemas, and validation for ShopFleet microservices",
+  "version": "1.0.0",
+  "role": "library",
+  "build": {
+    "command": "npm run build",
+    "artifacts": ["dist/"]
+  },
+  "test": {
+    "command": "npm test"
+  },
+  "lint": {
+    "command": "npm run lint"
+  },
+  "dependencies": [],
+  "dependents": [
+    "shopfleet-orchestrator",
+    "shopfleet-users",
+    "shopfleet-products",
+    "shopfleet-orders",
+    "shopfleet-payments",
+    "shopfleet-notifications"
+  ]
+}
